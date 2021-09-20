@@ -20,9 +20,9 @@ wordlist = input("Wordlist Dosyasinin Konumunu Giriniz:   ")
 if not dosya.endswith(".zip"):
     exit("Zip Dosyasi Girmelisiniz...")
 if not wordlist.endswith(".txt"):
-    exit("Wordlist dosyasi .txt şeklinde bitmelidir...")
+    exit("Wordlist dosyasi .txt seklinde bitmelidir...")
 
-# Zip Dosyası Tanıma
+# Zip Dosyasi Tanima
 try:
     zip_file = ZipFile(dosya)
 except FileNotFoundError:
@@ -31,10 +31,10 @@ except FileNotFoundError:
     
 os.system("cls")
 print(banner , "\n\n\n")
-# Password Sayısı
+# Password Sayisi
 try:
     n_words = len(list(open(wordlist, "rb")))
-    print("Denenecek Password Sayiısi:", n_words , "\n")
+    print("Denenecek Password Sayisi:", n_words , "\n")
 except FileNotFoundError:
     exit("Dosyalari kontrol ederek tekrar deneyin...")
 
