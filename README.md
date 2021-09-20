@@ -18,6 +18,8 @@
     
     cd zipCracker
     
+    pip install requirements.txt
+    
     python3 zipCracker.py
     
 
