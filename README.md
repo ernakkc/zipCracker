@@ -9,5 +9,5 @@
 ![](https://img.shields.io/github/forks/ernakkc/zipCracker)
 ![](https://img.shields.io/github/stars/ernakkc/zipCracker)
 ![](https://img.shields.io/github/last-commit/ernakkc/zipCracker)
-[![HitCount](http://hits.dwyl.com/Z4nzu/hackingtool.svg)](http://hits.dwyl.com/ernakkc/zipCracker)
+![](http://hits.dwyl.com/Z4nzu/hackingtool.svg)](http://hits.dwyl.com/ernakkc/zipCracker)
 ![](https://img.shields.io/badge/platform-Linux%20%7C%20KaliLinux%20%7C%20ParrotOs-blue)
