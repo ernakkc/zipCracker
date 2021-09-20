@@ -14,19 +14,19 @@ banner = """
 print(banner)
 
 
-dosya = input("Zip Dosyasının Konumunu Giriniz:  ")
-wordlist = input("Wordlist Dosyasının Konumunu Giriniz:   ")
+dosya = input("Zip Dosyasinin Konumunu Giriniz:  ")
+wordlist = input("Wordlist Dosyasinin Konumunu Giriniz:   ")
 
 if not dosya.endswith(".zip"):
-    exit("Zip Dosyası Girmelisiniz...")
+    exit("Zip Dosyasi Girmelisiniz...")
 if not wordlist.endswith(".txt"):
-    exit("Wordlist dosyası .txt şeklinde bitmelidir...")
+    exit("Wordlist dosyasi .txt şeklinde bitmelidir...")
 
 # Zip Dosyası Tanıma
 try:
     zip_file = ZipFile(dosya)
 except FileNotFoundError:
-    exit("Dosyaları kontrol ederek tekrar deneyin...")
+    exit("Dosyalari kontrol ederek tekrar deneyin...")
     
     
 os.system("cls")
@@ -34,9 +34,9 @@ print(banner , "\n\n\n")
 # Password Sayısı
 try:
     n_words = len(list(open(wordlist, "rb")))
-    print("Denenecek Password Sayısı:", n_words , "\n")
+    print("Denenecek Password Sayiısi:", n_words , "\n")
 except FileNotFoundError:
-    exit("Dosyaları kontrol ederek tekrar deneyin...")
+    exit("Dosyalari kontrol ederek tekrar deneyin...")
 
 
 # Password Deneme
@@ -47,7 +47,7 @@ with open(wordlist, "rb") as wordlist:
         except:
             continue
         else:
-            print("\n[+] Şifre Bulundu:", word.decode().strip())
+            print("\n[+] Sifre Bulundu:", word.decode().strip())
             exit(0)
-print("\n[!] Şifre bulunamadı, başka wordlist deneyin.")
+print("\n[!] Sifre bulunamadi, baska wordlist deneyin.")
     
